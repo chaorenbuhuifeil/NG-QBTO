@@ -6,7 +6,14 @@ import { IndexComponent } from './index/index.component';
 const routes: Routes = [
   {
     path:'',
-    component:IndexComponent 
+    component:IndexComponent,
+    children:[
+      {
+        path:'user',
+        loadChildren:() => import('./user/user.module').then(m => m.UserModule)
+      }
+    ]
+
   },
 
   {

@@ -11,7 +11,7 @@
             <li nz-submenu nzOpen nzTitle="菜单1" nzIcon="dashboard">
                 <ul>
                     <li nz-menu-item nzMatchRouter>
-                        <a routerLink="/welcome">Welcome</a>
+                        <a routerLink="user">Welcome</a>
                     </li>
                     <li nz-menu-item nzMatchRouter>
                         <a>Monitor</a>
@@ -72,7 +72,28 @@
                                     <div class="gutter-box">col-6</div>
                                 </div>
                                 <div nz-col class="gutter-row" nzSpan="6">
-                                    <div class="gutter-box">col-6</div>
+                                    <div class="gutter-box" style="align-content: center">
+                                        <nz-avatar nzIcon="user" nzSize="large"
+                                            nzSrc="assets/images/img/tx.jpg">
+                                        </nz-avatar>
+                                        <ng-container>
+                                            <button nz-button nz-dropdown [nzDropdownMenu]="menu">测试</button>
+                                            <nz-dropdown-menu #menu="nzDropdownMenu">
+                                                <ul nz-menu>
+                                                    <li nz-menu-item>1st menu item length</li>
+                                                    <li nz-menu-item>2nd menu item length</li>
+                                                    <li nz-menu-item>3rd menu item length</li>
+                                                </ul>
+                                            </nz-dropdown-menu>
+                                        </ng-container>
+                                        <!-- <button class="nzbtn" nz-button nz-popover nzPopoverTitle="Title"
+                                                [nzPopoverContent]="contentTemplate" nzPopoverPlacement="bottomLeft">
+                                                BL
+                                        </button> -->
+                                        <!-- <div style="margin-left: 60px; clear: both;">
+                                            
+                                        </div> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>

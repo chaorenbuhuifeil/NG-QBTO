@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NzPlacementType } from 'ng-zorro-antd';
 
 @Component({
   selector: 'app-index',
@@ -7,11 +6,6 @@ import { NzPlacementType } from 'ng-zorro-antd';
   styleUrls: ['./index.component.less']
 })
 export class IndexComponent implements OnInit {
-
-  listOfPosition: NzPlacementType[] = ['bottomLeft', 'bottomCenter', 'bottomRight', 'topLeft', 'topCenter', 'topRight'];
-
-
-  isCollapsed = false;
 
   constructor() { }
 
