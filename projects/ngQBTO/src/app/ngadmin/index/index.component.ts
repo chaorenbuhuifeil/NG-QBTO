@@ -7,6 +7,7 @@ import { NzPlacementType } from 'ng-zorro-antd';
   styleUrls: ['./index.component.less']
 })
 export class IndexComponent implements OnInit {
+  // isCollapsed = false;
 
   listOfPosition: NzPlacementType[] = ['bottomLeft', 'bottomCenter', 'bottomRight', 'topLeft', 'topCenter', 'topRight'];
 
