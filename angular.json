@@ -33,7 +33,8 @@
               }
             ],
             "styles": [
-              "projects/ngQBTO/src/styles.less"
+              "projects/ngQBTO/src/styles.less",
+              "projects/ngQBTO/src/theme.less"
             ],
             "scripts": []
           },
